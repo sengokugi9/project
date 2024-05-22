@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css_/style_map.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit"> 
+
+   
+</head>
+<body>
+    <img src="imgs/Logo_.png" width="100%">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-1 sticky-top  ">
+            <div class="container">
+            
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active ps-4 ms-4 " aria-current="page" href="index.html" >หน้าหลัก</a>
+                  </li>
+                  
+                  <li class="nav-item dropdown ps-3 ">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ข้อมูลทั่วไป
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="https://drive.google.com/file/d/1iHN0ganlW0VT6GAIfl13_WDsn8AoarOM/view" target="_blank">ข้อมูลนักเรียน นักศึกษา</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1lNpo2IwhKNeKaaKHvfPguu-brUKHcR_k/edit#gid=485929044" target="_blank">ข้อมูลบุคลากร</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="https://drive.google.com/file/d/1BiCv_ndNxu7qGmWsdavQ95cW6ma9eP8o/view" target="_blank">ข้อมูลสถานศึกษา</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="https://drive.google.com/file/d/1BiCv_ndNxu7qGmWsdavQ95cW6ma9eP8o/view" target="_blank">ข้อมูลหลักสูตร</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="https://drive.google.com/file/d/1dLDZ_UPlBgtEOCDhlr6iDfUK7Nu1LJqj/view" target="_blank">ข้อมูลงบประมาณ</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="https://drive.google.com/file/d/1UjIAMq7eYBujrzRLuMksKKXpY1Jx7a_k/view" target="_blank">ข้อมูลอาคาร</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="https://drive.google.com/file/d/1n9RNX69-NGp9qeJ_U81tyAvzT35JGNJR/view" target="_blank">ข้อมูลสถานประกอบการ</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="https://th.wikipedia.org/wiki/%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B8%B1%E0%B8%A1%E0%B8%A2%E0%B9%8C" target="_blank">ข้อมูลพื้นฐานจังหวัด</a></li>
+  
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="select_building.html"class="nav-link text-white ps-4">สถานที่</a></li>
+                    <li class="nav-item ps-4"></li>
+                  <li class="nav-item">
+                    <a href="select_post.html"class="nav-link text-white ">ข่าวสาร</a></li>
+                  <li class="nav-item ps-4">
+                    <li class="nav-item">
+                      <a href="map.html"class="nav-link text-white">แผนที่</a></li>
+                    <li class="nav-item ps-4">
+          
+                  
+                </ul>
+              
+              </div>
+            </div>
+        </nav>
+        
+    <br><br><strong class="tag_3 container">แผนที่วิทยาลัยเทคนิคนางรอง  </strong><br><br>
+        <br>
+    
+    <!-- btn1 -->
+    <div class="container">
+      
+        <button type="button" class="a1 btn  btn-circle btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            1
+          </button>
+          
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">อาคารหอประชุมและสำนักงาน (อาคาร 1)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img class="img-fluid" src="imgs/ARM_4095.jpg">
+                  อาคาร 1 หรือที่นักศึกษาหลายๆคนเรียกว่า หอประชุม <br> หอประชุมมีพื้นขนาด 960 ตร.ม. เป็นสถานที่สำหรับในการจัดกิจกรรมต่างๆ 
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal">ปิด</button>
+                </div>
+              </div>
+            </div>
+          </div>            
+        <img class="img" src="/imgs/map_0.png" alt="">
+        
+        
+    </div>
+    <!-- btn2 -->
+    <div class="container">
+      <button type="button" class="a2 btn  btn-circle btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+          2
+        </button>
+        
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">อาคารเรียนและปฏิบัติการ (อาคาร 2)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="imgs/ARM_3595.jpg">
+                อาคาร 2 อาคารนี้มีพื้นที่ขนาด 1,920 ตร.ม. <br> ส่วนมากอาคารนี้จะมีการเรียนการสอนวิชาสามัญและคอมพิวเตอร์เป็นหลัก
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- btn3 -->
+    <div class="container">
+      <button type="button" class="a3 btn  btn-circle btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+          3
+        </button>
+        
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">อาคารชั่วคราว (การโรงแรม)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="imgs/324162641_1271588356722226_1732341897755373153_n.jpg">
+                อาคารชั่วคราว อาคารนี้เป็นอาคารของแผนกการโรงแรมทั้งหมด <br> ไม่มีแผนกวิชาไหนเข้าไปเรียนนอกจากการโรงแรมเท่านั้น
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- btn4 -->
+    <div class="container">
+      <button type="button" class="a4 btn  btn-circle btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+          4
+        </button>
+        
+        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">อาคารภาควิชาบริหารธุรกิจและการจัดการ (อาคาร 4)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="imgs/011_7632.jpg">
+                อาคาร 4 ตัวอาคารมีพื้นที่ 1,920 ตร.ม. <br> อาคารนี้เป็นอาคารของแผนกบริหารธุรกิจและการจัดการ
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- btn5 -->
+    <div class="container">
+      <button type="button" class="a5 btn  btn-circle btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+          5
+        </button>
+        
+        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">NR มินิมาร์ท</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="imgs/ARM_3573.jpg">
+                NR มินิมาร์ท สถานที่ที่นักเรียนนักศึกษาต้องเข้าไปซื้อของ <br> เพราะ NR มินิมาร์ทขายสินค้ามากมายเริ่มตั้งแต่ของรับประทานอย่างของหวานของคาวยันเครื่องสำอางบำรุงผิวกันเลยทีเดียว
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- btn6 -->
+    <div class="container">
+      <button type="button" class="a6 btn  btn-circle btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+          6
+        </button>
+        
+        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">อาคารอํานวยการ</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="imgs/ARM_3581.jpg">
+                อาคารอํานวยการ มีขนาดพื้นที่ 1,088 ตร.ม. <br> อาคารอำนวยการเป็นอาคารของคณะผู้บริหารและเจ้าหน้าที่ธุระการต่างๆ
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- btn7 -->
+    <div class="container">
+      <button type="button" class="a7 btn  btn-circle btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+          7
+        </button>
+        
+        <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">โดมอเนกประสงค์</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="imgs/fdsfd.jpg">
+                โดม สถานที่สำคัญอันดับต้นๆที่นักเรียนนักศึกษาต้องพูดถึง <br> เพราะเป็นทั้งที่เข้าแถวกิจกรรมช่วงเช้าที่พักสำหรับเวลาว่างและสนามกีฬาของ วอลเลย์บอล ตะกร้อ รวมถึงฟุดซอลอีกด้วย เป็นสถานที่จัดตั้งกิจกรรมต่างๆมากที่สุดในวิทยาลัยเทคนิคนางรอง
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- btn8 -->
+    <div class="container">
+      <button type="button" class="a8 btn  btn-circle btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+          8
+        </button>
+        
+        <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">โรงอาหาร</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="imgs/011_7628.jpg">
+                 โรงอาหารมีพื้นที่ใช้สอย ประมาณ 816 ตารางเมตร <br> เป็นสถานที่พักผ่อนและรับประทานอาหารของนักเรียนนักศึกษาและคณะครู
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- btn9 -->
+    <div class="container">
+      <button type="button" class="a9 btn  btn-circle btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+          9
+        </button>
+        
+        <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">อาคารหอประชุมแพงพวย</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="imgs/IMG_20230125_172335.png">
+                หอประชุมแพงพวย อาคารนี้ชั้น 1 ถูกจัดเป็นห้องเรียน และชั้น 2 <br> เป็นห้องประชุมขนาดเล็กสำหรับคณะผู้บริหารและคณะครูเป็นส่วนมาก
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- btn10 -->
+    <div class="container">
+      <button type="button" class="a10 btn  btn-circle btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal10">
+          10
+        </button>
+        
+        <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">อาคารเรียนชั่วคราว</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="imgs/IMG_20230125_172318.png">
+                อาคารเรียนชั่วคราวร หรือที่นักเรียนนักศึกษาเรียกคือ ห้องพยาบาล จริงๆแล้วอาคารนี้เป็นทั้ง ห้องเรียน,งานพัสดุ,ห้องพยาบาล
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- btn11 -->
+    <div class="container">
+      <button type="button" class="a11 btn  btn-circle btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal11">
+          11
+        </button>
+        
+        <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">โรงจอดรถ</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="imgs/IMG_20230125_173126.png">
+                โรงรถ ถึงแม้คนที่มาสายจะจอดได้บ้างไม่ได้บ้างแต่โรงรถก็ยังเป็นสถานที่ให้นักเรียนนักศึกษาได้เข้าไปจอดรถ
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Zone A -->
+
+    <!-- btn12 -->
+    <div class="container">
+      <button type="button" class="a12 btn  btn-circle1 btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal12">
+          12
+        </button>
+        
+        <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">อาคารเฉลิมพระเกียรติฉลองสิริราชสมบัติครบ 60 ปี (ศูนย์วิทยบริการ)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="imgs/IMG_20230125_171800.png">
+                อาคารเฉลิมพระเกียรติ นักเรียนนักศึกษาหลายๆคนเรียกอาคารนี้ว่า <br> ห้องสมุด เนื้องจากชั้น 1 ส่วนมากเป็นห้องคอม และชั้น 2 เป็นห้องสมุด อาคารมีพื้นที่ขนาด 1,088 ตร.ม
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- btn13 -->
+    <div class="container">
+      <button type="button" class="a13 btn  btn-circle1 btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal13">
+          13
+        </button>
+        
+        <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">อาคารแผนกช่างเชื่อม</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="imgs/IMG_20230125_172011.png">
+                อาคารของแผนกช่างเชื่อม อาคารนี้มีพื้นที่ขนาด 944 ตร.ม. <br> เป็นอาคารฝึกทดสอบงานช่างของช่างเชือม
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- btn14 -->
+    <div class="container">
+      <button type="button" class="a14 btn  btn-circle1 btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal14">
+          14
+        </button>
+        
+        <div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">อาคารแผนกช่างกลโรงงาน</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="imgs/IMG_20230125_172035.png">
+                อาคารของแผนกช่างกลโรงงาน อาคารนี้มีพื้นที่ขนาด 944 ตร.ม. <br> เป็นอาคารฝึกทดสอบงานช่างต่างๆ
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- btn15 -->
+    <div class="container">
+      <button type="button" class="a15 btn  btn-circle1 btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal15">
+          15
+        </button>
+        
+        <div class="modal fade" id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">อาคารเฉลิมพระเกียรติ 6 รอบ พระชนมพรรษา (อาคาร 3)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="imgs/011_7613.jpg">
+                อาคาร 3 อาคารนี้จัดว่าเป็นอาคารหลักของแผนกช่างที่ต้องเข้าไปเรียนอยู่บ่อย และยังเป็นอาคารแผนกช่างอีกด้วย
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- btn16 -->
+    <div class="container">
+      <button type="button" class="a16 btn  btn-circle1 btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal16">
+          16
+        </button>
+        
+        <div class="modal fade" id="exampleModal16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">อาคารเรียนและปฏิบัติการ “11”</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="imgs/011_7611.jpg">
+                อาคาร 11 เป็นอาคารใหม่ที่หลายๆห้องอาจจะยังไม่เคยเข้าไปเรียนหรือ <br> เข้าไปเรียนบ้างแล้วแต่ยังไม่บ่อย โดยรวมแล้วเป็นอาคารใหม่ที่ถือว่าทำออกมาได้สวย
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- btn17 -->
+    <div class="container">
+      <button type="button" class="a17 btn  btn-circle1 btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal17">
+          17
+        </button>
+        
+        <div class="modal fade" id="exampleModal17" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">คูหาลูกเสือวิสามัญ (ROVER DEN)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="imgs/IMG_20230125_171718.png">
+                ลานลูกเสื้อ เป็นคูหาเสื้อและห้องสำหรับเก็บอุปกรณ์ลูกเสื้อ
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- btn18 -->
+    <div class="container">
+      <button type="button" class="a18 btn  btn-circle1 btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal18">
+          18
+        </button>
+        
+        <div class="modal fade" id="exampleModal18" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">สนามกีฬา</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="imgs/IMG_20230125_171535.png">
+                สนามกีฬา จัดได้ว่าถ้ามีงานกีฬาไหนถูกจัดขึ้น หนีไม่พ้นสนามนี้แน่นอน เนื้องจากขนาดที่ใหญ่ ใหญ่พอที่ให้กีฬาอย่าง วอลเลย์บอลและกีฬาอื่นๆแทรกเข้าไปอยู่ในสนามได้เลยทีเดียว
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+  </div>
+    <footer class=" pb-5  bg-dark text-white">
+        <div class="row">
+          <div class="col-11 col-md ms-5 mt-5 pt-3">
+            <img src="imgs/327373069_708205190935617_3681049345298871330_n-removebg-preview.png" width="280" height="70" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></img>
+          </div>
+          <div class="col-4 col-md mt-2 ms-5 mb-5">
+            <p class="title_s">วิทยาลัยเทคนิคนางรอง
+              1 หมู่ 1 ถนนบ้านเก่า-แพงพวย ต.นางรอง
+              อ.นางรอง จ.บุรีรัมย์ 31110 <br>
+              โทรศัพท์ 085-7785544, 044-631556 <br>
+              แฟ็กซ์ 044-632008  อีเมลล์ nricec@yahoo.com</p>
+          </div>
+
+          <div class="col-5 col-md ">
+            <nav>
+              <div class="nav nav-tabs mb-1" id="nav-tab" role="tablist">
+                <button class="nav-link text-white bg-dark active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">ระบบสารสนเทศ</button>
+                <button class="nav-link text-white bg-dark" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">เว็บไซต์ภายนอก</button>
+                <button class="nav-link text-white bg-dark" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">ติดต่อเรา</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <ul id="ul">
+                  <li><strong><a class="a-1" href="https://std2018.vec.go.th/web/">ระบบ ศธ.02 ออนไลน์</a></strong></li>
+                  <li><strong><a class="a-1" href="https://www.v-cop.go.th/v-cop/">ศูนย์เครือข่ายกำลังคนอาชีวศึกษา</a></strong></li>
+                  <li><strong><a class="a-1" href="https://www.r-idplan.net/plan/index.php">ID-Plan</a></strong></li>
+                  <li><strong><a class="a-1" href="https://admission.vec.go.th/web/student.htm?mode=init">สมัครเรียน</a></strong></li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <ul id="ul">
+                  <li><strong><a class="a-1" href="http://www.btec.ac.th/">วิทยาลัยเทคนิคบุรีรัมย์</a></strong></li>
+                  <li><strong><a class="a-1" href="http://www.kutc.ac.th/">วิทยาลัยเทคนิคคูเมือง</a></strong></li>
+                  <li><strong><a class="a-1" href="http://www.bcat.ac.th/">วิทยาลัยเกษตรและเทคโนโลยีบุรีรัมย์</a></strong></li>
+                  <li><strong><a class="a-1" href="https://www.bric.ac.th/">วิทยาลัยการอาชีพบุรีรัมย์</a></strong></li>
+                  <li><strong><a class="a-1" href="http://km.nonic.ac.th//?usid=10000001">วิทยาลัยการอาชีพโนนดินแดง</a></strong></li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <div class="div-footer">
+                <strong id="footer-strong">โทรศัพท์ 085-7785544 , 044-631556</strong><br>
+                <strong id="footer-strong">แฟ็กซ์ 044-632008</strong><br>
+                <strong id="footer-strong"><a id="title_b" href="https://login.yahoo.com/?.src=ym&pspid=159600001&activity=mail-direct&.lang=th-TH&.intl=th&.done=https%3A%2F%2Fmail.yahoo.com%2Fd%3F.intl%3Dth">อีเมลล์ nricec@yahoo.com</a></strong><br>
+                <strong id="footer-strong">เว็บไซต์ <a id="title_b"href="http://nrtech.ac.th/">http://nrtech.ac.th/</a></strong>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        
+          
+          
+        </div>
+      </footer>
+</body>
+</html>
